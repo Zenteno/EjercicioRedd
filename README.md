@@ -16,4 +16,9 @@ python azenteno.py sku-300 10
 
 En este caso traerá los 10 elementos más similares a sku-300
 
+
+En caso de querer la salida a un archivo de texto ejecutar:
+
+python azenteno.py sku-300 10 > salida.txt
+
 #uyuuuuy
