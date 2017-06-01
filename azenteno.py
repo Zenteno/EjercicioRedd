@@ -40,16 +40,15 @@ for u in d:
 		match = 0
 		for k in keys:
 			'''
-			verifica que el elemento comparando tenga el atributo
+			Si los atributos son iguales,
+			pondera de acuerdo al orden alfabético
 			'''
-			if k in d[u]:
-				'''
-				Si los atributos son iguales,
-				pondera de acuerdo al orden alfabético
-				'''
+			try:
 				if d[u][k] == base[k]:
 					contador+=i
 					match +=1
+			except Exception as e:
+				pass		
 			i+=1
 		'''
 			Si el elemento no tiene ningún atributo en común, se excluye de la lista
