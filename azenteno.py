@@ -41,7 +41,8 @@ for u in d:
 		for k in keys:
 			'''
 			Si los atributos son iguales,
-			pondera de acuerdo al orden alfabético
+			pondera de acuerdo al orden alfabético.
+			Lanzo un try en caso que el elemento a comparar no posea el atributo
 			'''
 			try:
 				if d[u][k] == base[k]:
