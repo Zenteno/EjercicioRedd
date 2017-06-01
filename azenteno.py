@@ -40,10 +40,13 @@ for u in d:
 		match = 0
 		for k in keys:
 			'''
-			Si los atributos son iguales,
-			pondera de acuerdo al orden alfabético
+			verifica que el elemento comparando tenga el atributo
 			'''
 			if k in d[u]:
+				'''
+				Si los atributos son iguales,
+				pondera de acuerdo al orden alfabético
+				'''
 				if d[u][k] == base[k]:
 					contador+=i
 					match +=1
